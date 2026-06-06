@@ -1,5 +1,6 @@
 import { BlogLayout } from "@/components/BlogLayout";
-import Content, * as meta from "./content.mdx";
+import Content from "./content.mdx";
+import { meta } from "./content.mdx"; // Or whatever your meta export is
 
 export default function Page() {
   return (
