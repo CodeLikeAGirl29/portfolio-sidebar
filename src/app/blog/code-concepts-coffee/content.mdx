@@ -1,0 +1,88 @@
+export const meta = {
+  date: "2026-05-28",
+  title: "Code, Concepts, and Coffee: Architecting a Real Estate Study App",
+  description:
+    "Preparing for the Florida Real Estate exam is no joke. Instead of just reading textbooks, I decided to code my own study platform using Next.js and TypeScript.",
+  image: "/images/blog/blog-img-2.png",
+  tags: ["Next.js", "Personal Projects", "Florida Real Estate"],
+};
+
+Studying for the Florida Real Estate License is an intense process. You have to master a mountain of information spanning property law, complex finance formulas, and detailed appraisal methods.
+
+After reviewing my practice scorecards and realizing I needed a more active way to drill the material, my frontend developer brain kicked in. I didn't just want a better study tool; I wanted to _build_ it.
+
+That is how my current project, **Florida Real Estate Drill**, was born.
+
+## Why Build Instead of Just Read?
+
+There is a concept in learning called "The Generation Effect," which suggests that information is better remembered if it is actively generated from your own mind rather than passively read.
+
+By designing the database structure for real estate laws and programming the logic to calculate amortization schedules, I am forcing myself to understand the material on a fundamental level. You can't write a TypeScript function to calculate a property's cap rate unless you truly understand how the math works.
+
+## The Tech Stack
+
+I wanted this app to be fast, modern, and highly interactive. Here is the stack I am currently using to bring it to life:
+
+- **Next.js 16 (with Turbopack):** For the core framework. The routing is intuitive, and the speed of Turbopack makes the local development experience incredibly smooth.
+- **TypeScript:** Real estate involves a lot of strict data types (percentages, currency, specific legal statuses). TypeScript keeps my code honest and catches errors before they ever hit the browser.
+- **Tailwind CSS:** Because studying shouldn't be ugly. Tailwind allows me to rapidly prototype clean, distraction-free interfaces so I can focus on the questions, not the clutter.
+
+## The Challenges of State Management and Scorecards
+
+One of the most interesting technical hurdles so far has been building the scorecard system.
+
+When you take a 100-question practice exam, the application needs to track your progress in real-time, allow you to flag questions for later review, and then generate a comprehensive breakdown of your strong and weak areas (e.g., scoring 90% in Finance, but 60% in Law).
+
+Managing that complex, nested state across different components without causing massive performance bottlenecks has been a fantastic exercise in React architecture.
+
+## Two Birds, One App
+
+Building the Florida Real Estate Drill platform is the ultimate "two birds, one stone" project.
+
+On one hand, it serves as a robust, practical addition to my developer portfolio, showcasing my ability to take a complex real-world problem and architect a full-stack solution. On the other hand, it is the exact tool I need to finally conquer those tricky appraisal concepts and pass the exam.
+
+If you are a developer trying to learn a complex new subject, I highly recommend trying to code a tool for it. You might be surprised by how much you learn along the way.
+
+<div className="not-prose mt-12 bg-slate-50 border border-slate-200 rounded-2xl p-8 shadow-sm">
+  <h3 className="text-xl font-black text-slate-900 mb-2">
+    Check out the project
+  </h3>
+
+  {/* 💡 Changed this tag from <p> to <div> to stop the nested <p> hydration error */}
+  <div className="text-slate-600 mb-6 text-sm">
+    Florida Real Estate Drill is actively being developed in public. You can
+    test out the live beta or dig into the Next.js and TypeScript source code to
+    see how it's built.
+  </div>
+
+  <div className="flex flex-wrap items-center gap-4">
+    <a
+      href="https://fl-re-drill.netlify.app"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-slate-900 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-slate-800 transition-colors shadow-sm"
+    >
+      View Live Demo
+    </a>
+
+    <a
+      href="https://github.com/codelikeagirl29/fl-re-drill"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 bg-white text-slate-700 border border-slate-200 px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-slate-50 transition-colors shadow-sm"
+    >
+      <svg
+        viewBox="0 0 24 24"
+        className="w-5 h-5 fill-current"
+        aria-hidden="true"
+      >
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.699-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+        />
+      </svg>
+      View on GitHub
+    </a>
+  </div>
+</div>
