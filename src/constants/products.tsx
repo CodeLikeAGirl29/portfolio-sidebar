@@ -59,8 +59,9 @@ export const products = [
           This application handles complex state management to track user
           progress, grade scorecards in real-time, and identify weak points in
           specific categories like property law or amortization. It is the
-          ultimate "two birds, one stone" project—sharpening my frontend
-          architecture skills while ensuring I am fully prepared for licensing.
+          ultimate &quot;two birds, one stone&quot; project—sharpening my
+          frontend architecture skills while ensuring I am fully prepared for
+          licensing.
         </p>
       </div>
     ),
@@ -81,7 +82,7 @@ export const products = [
       <div>
         <p>
           Coming from a background as an automotive technician, I know exactly
-          what a mechanic's business needs to succeed: clear communication,
+          what a mechanic&apos;s business needs to succeed: clear communication,
           established trust, and a frictionless way for clients to get in touch
           when their equipment breaks down.
         </p>
@@ -138,7 +139,7 @@ export const products = [
         <p>
           Sometimes as a developer, you have to break away from standard
           corporate templates and experiment with raw UI paradigms. This project
-          is a deep dive into the "Neobrutalism" design trend.
+          is a deep dive into the &quot;Neobrutalism&quot; design trend.
         </p>
         <p>
           Characterized by harsh shadows, stark high-contrast colors, and thick

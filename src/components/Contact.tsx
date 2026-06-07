@@ -60,8 +60,8 @@ export const Contact = () => {
       <div className="mb-10">
         <Heading className="font-black pb-4 text-3xl">Get in touch</Heading>
         <Paragraph>
-          Whether you're looking to build a website or find a home in the
-          Panhandle, I'd love to hear from you.
+          Whether you&apos;re looking to build a website or find a home in the
+          Panhandle, I&apos;d love to hear from you.
         </Paragraph>
       </div>
 
